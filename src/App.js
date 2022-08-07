@@ -2,7 +2,6 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  console.log(process.env)
   const url = process.env.NODE_ENV == "development" 
     ? 'http://localhost:3000'
     : process.env.REACT_APP_VERCEL_URL;
