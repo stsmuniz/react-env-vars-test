@@ -2,6 +2,9 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const url = process.env.NODE_ENV == "development" 
+    ? 'http://localhost:3000'
+    : process.env.VERCEL_URL;
   return (
     <div className="App">
       <header className="App-header">
@@ -17,6 +20,7 @@ function App() {
         >
           Learn React
         </a>
+        <p>Minha variável de ambiente: {url}</p>
       </header>
     </div>
   );
