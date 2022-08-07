@@ -5,7 +5,7 @@ function App() {
   console.log(process.env)
   const url = process.env.NODE_ENV == "development" 
     ? 'http://localhost:3000'
-    : process.env.VERCEL_URL;
+    : process.env.REACT_APP_VERCEL_URL;
   return (
     <div className="App">
       <header className="App-header">
